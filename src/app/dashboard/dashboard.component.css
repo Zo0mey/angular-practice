@@ -1,0 +1,44 @@
+div {
+    display: block;
+    width: 100%;
+    height: 80px;
+    float: initial;
+    background: #39CCCC;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #08154A;
+}
+
+section {
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+}
+
+button {
+    font-family: Arial;
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+  }
+  button:hover {
+    background-color: #cfd8dc;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+  }
+  button {
+    color: #888;
+  }
+
+  .createTask {
+      display: none;
+  }

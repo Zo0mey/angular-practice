@@ -1,0 +1,21 @@
+<div>
+  <app-dashboard></app-dashboard>
+  <hr>
+    <div class="todo">
+      <h3>TODO</h3>
+      <app-tasks></app-tasks>
+    </div>
+    <div class="in-progress">
+        <h3>In Progress</h3>
+        <div class="tasks" dragula="in-progress" [dragulaModel]="list"></div>
+    </div>
+    <div class="review">
+        <h3>Review</h3>
+        <div class="tasks" dragula="review" [dragulaModel]="list"></div>
+    </div>
+    <div class="done">
+        <h3>Done</h3>
+        <div class="tasks" dragula="done" [dragulaModel]="list"></div>
+    </div>
+  <hr>
+</div>

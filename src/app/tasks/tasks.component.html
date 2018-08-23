@@ -1,0 +1,22 @@
+<div>
+  <section class="createTaskButton">
+    <button class="createTask" (click)="toggleCreateTaskDiv()"></button>
+  </section>
+  <section class="createTaskForm" *ngIf="showCreateDiv">
+    <input #taskTitle placeholder="Task name *" />
+    <input #taskDescription placeholder="Task description" />
+    <!-- (click) passes input value to addTask() and then clears the input -->
+    <button (click)="addTask(taskTitle.value, taskDescription.value); taskTitle.value=''; taskDescription.value='';">
+      add
+    </button>
+  </section>
+  <ul class="tasks" dragula="RIGHT" [dragulaModel]="list">
+    <li class="tasklist" *ngFor="let task of tasks">
+      <a routerLink="/detail/{{task.id}}">
+        <span class="badge">{{task.title}} </span>
+        <span class="description-span">{{ task.description | slice:0:25 }}...</span>
+      </a>
+      <button class="delete" title="delete task" (click)="delete(task)"></button>
+    </li>
+  </ul>
+</div>

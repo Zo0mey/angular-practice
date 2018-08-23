@@ -1,0 +1,12 @@
+h3 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+div.todo, div.in-progress, div.review, div.done{
+    display: inline-table;
+    min-height: 360px;
+    max-width: 650px;
+    min-width: 210px;
+    border: 5px solid white;
+    background-color: rgba(255, 65, 54, 0.8);
+}
